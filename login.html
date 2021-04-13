@@ -29,14 +29,22 @@
         <a href="#">Contact</a>       
     </div>
 </div>
-<div class="dimbg">
+<div class="dimbg" id="bgdark" onclick="disMis()">
 
 </div>
 </body>
 <script type="text/javascript">
     function openFunction(){
-        document.getElementById("lol").style.width="500px";
-        document.getElementsByClass("dimbg").style.left="0%";
+        document.getElementById("lol").style.right = "0px";
+        document.getElementById("bgdark").style.left = "0px";
+    }
+    function closeFunction(){
+        document.getElementById("lol").style.right = "-250px";
+        document.getElementById("bgdark").style.left = "100%";
+    }
+    function disMis(){
+        document.getElementById("lol").style.right = "-250px";
+        document.getElementById("bgdark").style.left = "100%";
     }
 
 </script>

@@ -72,6 +72,7 @@ div i{
     z-index: 2;
     background-color: #807E7E;
     right: -250px;
+    transition: 0.3s;
 }
 .side i{
     position: absolute;
