@@ -14,11 +14,15 @@
         <div><h1>IOT BASAED SMART HOME USING FACE RECOGNIZATION</h1></div>
         <div ><i onclick="openFunction()" class="fa fa-bars"></i></div>
     </div>
+    <form class="form1" id="form1" name="MyForm" method="POST" action="mainpage/mainpage.html">
     <div class="form">
-        <input type="text" alt="User Name" placeholder="User ID">
-        <input type="password" alt="User Name" placeholder="Password">
-        <button class="button" ><a href="mainpage/mainpage.html">Log In</a></button>
+        <input type="text" alt="User Name" placeholder="User ID" id="username" name="username">
+        <input type="password" alt="User Name" placeholder="Password" id="password" name="password">
+        <small>User name or Password not valid</small> <br>
+        <input type="submit" class="button" value="Login">
+        <!-- <button class="button" ><a href="mainpage/mainpage.html">Log In</a></button> -->
     </div>
+    </form>
 </div>
 <div class="side" id="lol">
     <i onclick="closeFunction()" class="fa fa-bars" id="lol1"></i>
@@ -46,6 +50,5 @@
         document.getElementById("lol").style.right = "-250px";
         document.getElementById("bgdark").style.left = "100%";
     }
-
 </script>
 </html>
